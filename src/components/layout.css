@@ -1,3 +1,5 @@
+
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -19,6 +21,13 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
+
+footer {
+  border-top: 1px solid #78757a;
+  padding: 1rem;
+  margin: auto;
+}
+
 article,
 aside,
 details,
@@ -53,6 +62,7 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  text-decoration: none;
 }
 a:active,
 a:hover {
@@ -590,8 +600,11 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
   }
 }
+
+
