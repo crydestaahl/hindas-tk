@@ -5,15 +5,19 @@ module.exports = {
     author: `@gatsbyjs`,
     menuLinks:[
       {
-         name:'Home',
+         name:'Hindås TK',
          link:'/'
       },
       {
-         name:'About',
+         name:'Boka bana',
          link:'/about'
       },
       {
-         name:'Contact',
+         name:'Medlemsskap',
+         link:'/medlemsskap'
+      },
+      {
+         name:'Tennisskola',
          link:'/contact'
       }
     ]

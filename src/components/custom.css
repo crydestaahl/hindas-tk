@@ -138,4 +138,13 @@ header {
     width: 301px;
 }
 
+.h1-on-hero {
+    position: relative;
+    top: -14rem;
+    left: 0rem;
+    color: white;
+    text-shadow: 1px 0 gold, 0 1px gold, 1px 0 gold, 0 1px gold;
+    text-align: center;
+}
+
 /* Custom classes */
