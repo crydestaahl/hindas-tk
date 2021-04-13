@@ -10,7 +10,7 @@ module.exports = {
       },
       {
          name:'Boka bana',
-         link:'/about'
+         link:'https://www.matchi.se/facilities/hindastk?date=2021-04-13&sport='
       },
       {
          name:'Medlemsskap',
@@ -23,6 +23,7 @@ module.exports = {
     ]
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {

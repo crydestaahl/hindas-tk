@@ -17,11 +17,13 @@ const IndexPage = () => (
       style={{ marginBottom: `1.45rem` }}    
     />
     <div>
-      <div className="h1-on-hero">
-        <h1>Välkommen till Hindås TK</h1>
+      <div className="container">
+        <div className="h1-on-hero">
+          <h1>Välkommen till Hindås TK</h1>
+        </div>
+        <button className="button"><a href="https://www.matchi.se/facilities/hindastk?date=2021-04-13&sport=">Boka bana</a></button>
+        <button className="button"><a href="#">Medlemsskap</a></button>
       </div>
-      <p>Välkommen till Hindås TK.</p>
-      <p></p>
     </div>
     <p>
       <Link to="/page-2/">Go to page 2</Link> <br />
