@@ -70,7 +70,10 @@ const Header = ({ siteTitle, menuLinks }) => {
 
             <div 
               className="hamburger"
-              style={{ marginLeft: 'auto'}}
+              style={{ 
+                marginLeft: 'auto',
+                display: `${isActive? 'block' : 'none'}`
+              }}
               onClick={toggleIsActive}
               >
               <div className={ isActive ? 'bar1-active' : 'bar1'}></div> 

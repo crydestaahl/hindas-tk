@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `TEST`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Hindås TK`,
+    description: `Hindås TK's hemsida. Boka bana och spela tennis hos oss!`,
+    author: `Christoffer Rydeståhl`,
     menuLinks:[
       {
          name:'Hindås TK',

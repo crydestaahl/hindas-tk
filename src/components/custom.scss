@@ -1,11 +1,20 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-// If need, change your variables before importing Bulma
 $title-color: #a70d18;
-
+$font: 'Montserrat', sans-serif;
+// If need, change your variables before importing Bulma
 @import "~bulma/bulma.sass";
 
+
 /* Custom classes */
+h1,
+h2,
+h3,
+h4,
+a {
+    font-family: $font;
+}
 
 ul {
     display: flex;
@@ -20,7 +29,7 @@ li {
 
 button {
     width: 100%;
-    background: $title-color !important;
+    background: $title-color;    
     
     a {
         text-decoration: none;
@@ -162,12 +171,64 @@ header {
     }
 }
 
-.h1-on-hero {
-    position: relative;
-    top: -14rem;
-    left: 0rem;
-    color: white;
-    text-shadow: 1px 0 #a70d18, 0 1px #a70d18, 1px 0 #a70d18, 0 1px #a70d18;
-    text-align: center;
+.hero {
+    background-image: url('../images/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 28rem;
+    font-family: $font;
+
+    img {
+        height: 80px;
+        width: 80px;
+        margin: 2rem auto;
+    }
+
+    .hero-text {
+        margin: 0 auto;
+        font-family: $font;
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+
+        h1 {
+            font-size: 45px;
+        }
+
+        h4 {
+
+        }
+    }
+
+    .hero-btn {
+        background: rgba(232, 232, 232, 0.4);
+        position: relative;
+        top: -2rem;
+        padding: 1.8px;           
+
+        button {
+            margin: 1rem 0;
+            padding: 1.3rem;
+            text-transform: uppercase;                      
+            border-radius: 16px;
+            box-shadow: 0px 3px 15px rgba(0,0,0,0.5);            
+            background: linear-gradient(348deg, rgba(167,13,24,1) 0%, rgba(167,13,24,1) 42%, rgba(255,42,57,1) 100%);
+            border-color: rgba(167,13,24, 0)
+        }
+    }
+}
+
+.blog {    
+    .blog-title {   
+        background: linear-gradient(348deg, rgba(167,13,24,1) 0%, rgba(167,13,24,1) 42%, rgba(255,42,57,1) 100%);
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 2rem;
+
+        h3 {
+            font-size: 33px;            
+        }
+    }
 }
 
