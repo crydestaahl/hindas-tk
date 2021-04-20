@@ -194,26 +194,24 @@ header {
         h1 {
             font-size: 45px;
         }
-
-        h4 {
-
-        }
     }
 
     .hero-btn {
-        background: rgba(232, 232, 232, 0.4);
+        background: rgba(232, 232, 232, 0.23);
         position: relative;
         top: -2rem;
         padding: 1.8px;           
 
         button {
-            margin: 1rem 0;
-            padding: 1.3rem;
+            margin: 1rem 1rem;
+            padding: 1.5rem;
+            width: 89%;
             text-transform: uppercase;                      
             border-radius: 16px;
             box-shadow: 0px 3px 15px rgba(0,0,0,0.5);            
             background: linear-gradient(348deg, rgba(167,13,24,1) 0%, rgba(167,13,24,1) 42%, rgba(255,42,57,1) 100%);
-            border-color: rgba(167,13,24, 0)
+            border-color: rgba(167,13,24, 0);
+            font-weight: bold; 
         }
     }
 }
