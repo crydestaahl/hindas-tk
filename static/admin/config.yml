@@ -1,5 +1,5 @@
 backend:
-  name: github-gateway
+  name: git-gateway
   repo: crydestaahl/hindas-tk
   branch: main
 
