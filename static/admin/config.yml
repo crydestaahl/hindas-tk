@@ -3,7 +3,7 @@ backend:
   repo: crydestaahl/hindas-tk
   branch: main
 
-media_folder: static/assets
+media_folder: static/assets/images
 public_folder: /assets
 
 collections:
@@ -15,4 +15,7 @@ collections:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
+      - { name: description, label: Description }
       - { name: body, label: Body, widget: markdown }
+
+

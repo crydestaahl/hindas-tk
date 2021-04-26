@@ -1,17 +1,21 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import {  graphql, Link } from "gatsby"
+
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import logo from "../images/logo.jpg"
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => {
+  const posts  = data.allMarkdownRemark.edges 
+
+  console.log(posts)
+  return(
   <Layout>
     <SEO title="Home" />
       <div className="container">
         <div className="hero">            
-          <img src={logo} />
+          <img src={logo} alt="Logo"/>
           <div className="hero-text">
             <h4>Välkommen till</h4>
             <h1>Hindås TK</h1>
@@ -26,11 +30,38 @@ const IndexPage = () => (
             <h3>Nyheter</h3>
         </div>
         <div className="blog-posts">
-        
-          
+       
+            {posts.map(post => (
 
+               <div className="card" key={post.id}>
+              <div className="card-image">
+                <figure className="image is-4by3">
+                <Link to={post.node.fields.slug}>
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"/>
+                </Link>
+                  </figure>
+              </div>
+            <div className="card-content">
+              <div className="media">
+                
+                <div className="media-content">
+                  <Link to={post.node.fields.slug}>
+                    <p className="title is-4"> {post.node.frontmatter.title}</p>
+                  </Link>
+                  <p><time datetime="2021-04-26">{post.node.frontmatter.date}</time></p>
+                </div>
+              </div>
+              <div className="content">
+                {post.node.frontmatter.description}
+                <br/>
+                <Link to={post.node.fields.slug}>
+                  <p>Läs mer...</p>
+                </Link>                
+              </div>
+              </div>
+            </div>
 
-
+              ))}
         </div>
         <div className="blog">
           <div className="blog-title">
@@ -40,10 +71,29 @@ const IndexPage = () => (
         </div>
         </div>
       </div>      
-    
 
-    
   </Layout>
-)
+  )
+}
 
 export default IndexPage
+
+export const pageQuery = graphql`
+  query MyQuery {
+    allMarkdownRemark {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            date(fromNow: true)
+            description
+          }
+          rawMarkdownBody
+        }
+      }
+    }
+  }
+`
