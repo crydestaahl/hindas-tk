@@ -29,12 +29,16 @@ li {
 
 button {
     width: 100%;
-    background: $title-color;    
+    background: white;    
     
     a {
         text-decoration: none;
-        color: white;
+        color: $title-color;
     }
+}
+
+main {
+    padding: 5rem 0rem 1rem 0rem !important;
 }
 
 .site-content {
@@ -190,6 +194,7 @@ header {
         color: white;
         text-transform: uppercase;
         text-align: center;
+        margin-bottom: 3rem;
 
         h1 {
             font-size: 45px;
@@ -209,7 +214,7 @@ header {
             text-transform: uppercase;                      
             border-radius: 16px;
             box-shadow: 0px 3px 15px rgba(0,0,0,0.5);            
-            background: linear-gradient(348deg, rgba(167,13,24,1) 0%, rgba(167,13,24,1) 42%, rgba(255,42,57,1) 100%);
+            background: white;
             border-color: rgba(167,13,24, 0);
             font-weight: bold; 
         }
@@ -218,11 +223,14 @@ header {
 
 .blog {    
     .blog-title {   
-        background: linear-gradient(348deg, rgba(167,13,24,1) 0%, rgba(167,13,24,1) 42%, rgba(255,42,57,1) 100%);
-        color: white;
+        //background: linear-gradient(348deg, rgba(167,13,24,1) 0%, rgba(167,13,24,1) 42%, rgba(255,42,57,1) 100%);
+        color: $title-color;
         text-transform: uppercase;
         text-align: center;
-        padding: 2rem;
+        padding: 4rem 2rem;
+        border-bottom: $title-color 2px solid;        
+        border-top: $title-color 2px solid;
+        border-bottom: $title-color 2px solid;
 
         h3 {
             font-size: 33px;            

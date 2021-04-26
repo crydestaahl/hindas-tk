@@ -33,17 +33,16 @@ const IndexPage = ({ data }) => {
        
             {posts.map(post => (
 
-               <div className="card" key={post.id}>
-              <div className="card-image">
-                <figure className="image is-4by3">
-                <Link to={post.node.fields.slug}>
-                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"/>
-                </Link>
+              <div className="card" key={post.id}>
+                <div className="card-image">
+                  <figure className="image is-4by3">
+                    <Link to={post.node.fields.slug}>
+                      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"/>
+                    </Link>
                   </figure>
               </div>
             <div className="card-content">
               <div className="media">
-                
                 <div className="media-content">
                   <Link to={post.node.fields.slug}>
                     <p className="title is-4"> {post.node.frontmatter.title}</p>
@@ -60,8 +59,7 @@ const IndexPage = ({ data }) => {
               </div>
               </div>
             </div>
-
-              ))}
+          ))}
         </div>
         <div className="blog">
           <div className="blog-title">
