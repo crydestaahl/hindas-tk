@@ -1,5 +1,5 @@
 import * as React from "react"
-import { useState, useEffect } from 'react' 
+import { useState } from 'react' 
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
@@ -16,10 +16,8 @@ const Header = ({ siteTitle, menuLinks }) => {
     <header
       style={{        
         background: `white`,
-        marginBottom: `1.45rem`,
-      
-      }}
-      
+        marginBottom: `1.45rem`,      
+      }}      
     >    
       <div
         style={{
@@ -30,12 +28,13 @@ const Header = ({ siteTitle, menuLinks }) => {
         }}
       >
       <StaticImage 
-        src="../images/logo.jpg"
+        src="../images/logo.png"
         width={80}
         quality={95}
         formats={["AUTO", "WEBP", "AVIF"]}
         alt="HTK's logo"
         style={{ marginBottom: `1.45rem` }}
+        placeholder="none"
       />
       {/* <h1 style={{ margin: 0 }}> 
           <Link
@@ -65,9 +64,7 @@ const Header = ({ siteTitle, menuLinks }) => {
           className="overlay"
           style={{ width: `${isActive ? '100%': '0'}`}}
           >
-
           <ul style={{ display: "flex", flex: 1 }}>
-
             <div 
               className="hamburger"
               style={{ 
@@ -80,8 +77,6 @@ const Header = ({ siteTitle, menuLinks }) => {
               <div className={ isActive ? 'bar2-active' : 'bar2'}></div> 
               <div className={ isActive ? 'bar3-active' : 'bar3'}></div> 
             </div>
-
-
             <div className="overlay-content">
               {menuLinks.map(link => (
                 <li                
