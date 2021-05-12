@@ -18,51 +18,11 @@ const Header = ({ siteTitle, menuLinks }) => {
         background: `white`,
         marginBottom: `1.45rem`,      
       }}      
-    >    
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `1.45rem 1.0875rem`,
-          display: 'flex'
-        }}
-      >
-      <StaticImage 
-        src="../images/logo.png"
-        width={80}
-        quality={95}
-        formats={["AUTO", "WEBP", "AVIF"]}
-        alt="HTK's logo"
-        style={{ marginBottom: `1.45rem` }}
-        placeholder="none"
-      />
-      {/* <h1 style={{ margin: 0 }}> 
-          <Link
-            to="/"
-            style={{
-              color: `white`,
-              textDecoration: `none`,
-            }}
-          >
-            {siteTitle}
-          </Link>
-        </h1>
-        */}
-        <div 
-          className="hamburger"
-          style={{ marginLeft: 'auto'}}
-          onClick={toggleIsActive}
-          >
-           <div className={ isActive ? 'bar1-active' : 'bar1'}></div> 
-           <div className={ isActive ? 'bar2-active' : 'bar2'}></div> 
-           <div className={ isActive ? 'bar3-active' : 'bar3'}></div> 
-        </div>
-      </div>
-      <div>
-        <nav>
-        <div 
+    >
+    
+    <div 
           className="overlay"
-          style={{ width: `${isActive ? '100%': '0'}`}}
+          style={{ width: `${isActive ? '100vw': '0'}`}}
           >
           <ul style={{ display: "flex", flex: 1 }}>
             <div 
@@ -96,6 +56,53 @@ const Header = ({ siteTitle, menuLinks }) => {
             </div>
           </ul>
         </div>
+
+
+
+      <div
+        style={{
+          margin: `0 auto`,
+          maxWidth: 960,
+          padding: `1.45rem 1.0875rem`,
+          display: 'flex'
+        }}
+      >
+      <Link to="/">
+        <StaticImage 
+          src="../images/logo.png"
+          width={80}
+          quality={95}
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="HTK's logo"
+          style={{ marginBottom: `1.45rem` }}
+          placeholder="none"
+        />
+      </Link>
+      {/* <h1 style={{ margin: 0 }}> 
+          <Link
+            to="/"
+            style={{
+              color: `white`,
+              textDecoration: `none`,
+            }}
+          >
+            {siteTitle}
+          </Link>
+        </h1>
+        */}
+        <div 
+          className="hamburger"
+          style={{ marginLeft: 'auto'}}
+          onClick={toggleIsActive}
+          >
+           <div className={ isActive ? 'bar1-active' : 'bar1'}></div> 
+           <div className={ isActive ? 'bar2-active' : 'bar2'}></div> 
+           <div className={ isActive ? 'bar3-active' : 'bar3'}></div> 
+        </div>
+      </div>
+      <div>
+        <nav>
+        
         </nav>
       </div>
     </header>

@@ -227,8 +227,7 @@ header {
         color: $title-color;
         text-transform: uppercase;
         text-align: center;
-        padding: 4rem 2rem;
-        border-bottom: $title-color 2px solid;        
+        padding: 4rem 2rem;      
         border-top: $title-color 2px solid;
         border-bottom: $title-color 2px solid;
 
@@ -237,4 +236,49 @@ header {
         }
     }
 }
+
+.about-index {
+
+    p {
+        padding: 0 24px;
+    }
+
+    .about-title {
+        padding: 0;
+        border-bottom: none;
+
+        .about-index-img {
+            border-top: $title-color 2px solid;
+            border-bottom: $title-color 2px solid;
+        }
+
+        .about-h3 {
+            font-size: 33px;    
+            position: relative;
+            top: -10rem;
+            left: 16%;
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.blog-post-content {
+    margin: 1rem; 
+
+    .blog-post-h1 {
+        font-size: 1.9rem;
+        font-weight: 500;            
+    }
+
+    small {
+        margin-top: 2rem;
+    }
+
+    .blog-post-body {
+        margin-top: 2rem;
+    }
+}
+
+
 

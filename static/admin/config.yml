@@ -12,6 +12,7 @@ collections:
     folder: blog
     create: true
     fields:
+      - {name: "templateKey", label: "Template Key",  widget: "hidden", default: "blog"}
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
@@ -19,4 +20,16 @@ collections:
       - { name: image, label: Image, widget: image }
       - { name: body, label: Body, widget: markdown }
 
+  - name: home
+    label: Home
+    files:
+      - file: "home/home.md"
+        fields:
+          - { name: path, label: Path }
+          - { name: date, label: Date, widget: datetime }
+          - { name: title, label: Title }
+          - { name: description, label: Description }
+          - { name: body, label: Body, widget: markdown }
 
+  
+          

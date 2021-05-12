@@ -1,5 +1,6 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image"
 import Layout from './layout' 
 
 export default function BlogPost({ data }) {
@@ -7,9 +8,16 @@ export default function BlogPost({ data }) {
 
   return (
     <Layout>
-      <h1>{post.frontmatter.title}</h1>
-      <small>{post.frontmatter.date}</small>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <GatsbyImage 
+        alt={post.frontmatter.title} 
+        image={post.frontmatter.image.childImageSharp.gatsbyImageData}
+      />
+      <div className="blog-post-content">
+        <h1 className="blog-post-h1">{post.frontmatter.title}</h1>
+        <small>{post.frontmatter.date}</small>
+        <div className="blog-post-body"dangerouslySetInnerHTML={{ __html: post.html }} />  
+        <Link to="/blog-page">Tillbaka till nyheter.</Link>
+      </div>         
     </Layout>
   )
 }
@@ -19,7 +27,16 @@ export const query = graphql`
       html
       frontmatter {
         title
-        date
+        date(formatString: "DD MMMM, YYYY")
+        image {
+          childImageSharp {
+            gatsbyImageData(
+              layout: FULL_WIDTH
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+        }
       }
     }
   }

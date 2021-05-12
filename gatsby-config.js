@@ -3,8 +3,8 @@ const path = require(`path`)
 module.exports = {
   siteMetadata: {
     title: `Hindås TK`,
-    description: `Hindås TK's hemsida. Boka bana och spela tennis hos oss!`,
-    author: `Christoffer Rydeståhl`,
+    description: `Hindås TK hittar ni uppe i det nybyggda området. Boka bana och spela tennis hos oss!`,
+    author: `Christoffer Rydeståhl`,    
     menuLinks:[
       {
          name:'Hindås TK',
@@ -20,8 +20,12 @@ module.exports = {
       },
       {
          name:'Tennisskola',
-         link:'/contact'
-      }
+         link:'/tennis-school'
+      },
+        {
+         name:'Nyheter',
+         link:'/blog-page'
+      },
     ]
   },
   plugins: [
@@ -49,6 +53,13 @@ module.exports = {
       options: {
         name: `pages`,
         path: `${__dirname}/src/pages/`,
+      },  
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/home/`,
       },  
     },
     `gatsby-transformer-sharp`, 
