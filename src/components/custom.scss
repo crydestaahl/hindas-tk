@@ -6,6 +6,10 @@ $font: 'Montserrat', sans-serif;
 // If need, change your variables before importing Bulma
 @import "~bulma/bulma.sass";
 
+.site-content {
+    overflow-x: scroll;
+}
+
 
 /* Custom classes */
 h1,
