@@ -24,6 +24,8 @@ collections:
     label: Home
     files:
       - file: "home/home.md"
+        name: home
+        label: Home
         fields:
           - { name: path, label: Path }
           - { name: date, label: Date, widget: datetime }
