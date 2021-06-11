@@ -2,29 +2,17 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import SponsorGallery from "../components/sponsors"
-import Header from "./header"
+import HeaderCampaign from "./headerCampaign"
 import "./layout.css"
 import "./custom.scss"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-          menuLinks {
-            name
-            link
-          }
-        }
-      }
-    }
-  `)
+const LayoutCampaign = ({ children }) => {
+ 
 
   return (
-    <>
+   
     <div className="site-content">
-      <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
+      <HeaderCampaign />
           <main>{children}</main>
         <footer
           style={{
@@ -36,13 +24,12 @@ const Layout = ({ children }) => {
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
-      </div>
-    </>
+      </div>  
   )
 }
 
-Layout.propTypes = {
+LayoutCampaign.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default LayoutCampaign

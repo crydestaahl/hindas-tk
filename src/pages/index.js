@@ -35,7 +35,7 @@ const IndexPage = () => {
                 <h3 className="about-h3">Tennisskola</h3>
               </Link>
           </div>
-            <p>Vi bedriver tennisskola för såväl vuxna och barn och anordnar regelbundet tävlingar och klubbmästerskap.</p>
+            <p>Vi har tennisskola för såväl vuxna och barn och anordnar regelbundet tävlingar och klubbmästerskap.</p>
             <Link to="tennis-school"><p>Läs mer...</p></Link>
           </div>
           
