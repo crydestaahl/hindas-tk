@@ -16,7 +16,7 @@ module.exports = {
       },
       {
          name:'Medlemsskap',
-         link:'/medlemsskap'
+         link:'/members'
       },
       {
          name:'Tennisskola',
