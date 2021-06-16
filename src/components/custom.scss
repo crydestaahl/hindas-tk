@@ -21,6 +21,10 @@ a {
     font-family: $font;
 }
 
+a {
+    color: $title-color
+}
+
 ul {
     display: flex;
     flex-direction: column;
@@ -285,5 +289,12 @@ header {
     }
 }
 
+form {
+    p {
+        font-weight: bold;
+    }
 
-
+    input {
+        height: 43px;
+    }
+}

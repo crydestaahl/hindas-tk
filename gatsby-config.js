@@ -55,13 +55,6 @@ module.exports = {
         path: `${__dirname}/src/pages/`,
       },  
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `content`,
-        path: `${__dirname}/home/`,
-      },  
-    },
     `gatsby-transformer-sharp`, 
     `gatsby-plugin-sharp`,
     {
