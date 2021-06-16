@@ -4,7 +4,7 @@ path: Grusbanan är redo för spel
 date: 2021-06-13T06:57:58.724Z
 title: Grusbanan är redo för spel
 description: "Äntligen kan du spela på grus i Hindås igen! "
-image: /images/utebanan.jpeg
+image: ../src/images/utebanan.jpeg
 ---
 En match med tillhörande dopp i Västra Nedsjön hör sommaren till. 
 

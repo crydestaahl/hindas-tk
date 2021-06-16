@@ -4,7 +4,7 @@ path: Fixardag på utebanan
 date: 2021-06-13T06:54:00.603Z
 title: Fixardag på utebanan
 description: Många medlemmar kom och preppade utebanan för spel idag.
-image: /images/tennisclay.jpeg
+image: ../src/images/tennisclay.jpeg
 ---
 Äntligen är det vår på riktigt! 
 
