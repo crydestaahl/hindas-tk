@@ -34,6 +34,7 @@ const SchoolPage = () => (
             action="/thanks-members"
             data-netlify="true"
           >
+            <input type="hidden" name="form-name" value="Tennisskola" />
             <label>
             <p>Namn</p>
                 <input name="namn" type="text" name="name" id="name" />

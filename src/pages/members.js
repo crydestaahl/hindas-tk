@@ -21,6 +21,7 @@ const MembersPage = () => {
           action="/thanks-members"
           data-netlify="true"
         >
+        <input type="hidden" name="form-name" value="Medlemsskapsanmälan" />
             <label>
             <p>För- och efternamn</p>
                 <input type="text" name="name" id="name" />
