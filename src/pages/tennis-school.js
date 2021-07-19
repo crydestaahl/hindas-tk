@@ -29,9 +29,10 @@ const SchoolPage = () => (
       </p>
       <div className="contact-form" style={{margin: '2rem 0'}}>
           <form 
+            name="Tennisskola"
             method="post" 
             action="#"
-            netlify
+            data-netlify="true"
           >
             <label>
             <p>Name</p>
