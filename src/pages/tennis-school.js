@@ -28,7 +28,11 @@ const SchoolPage = () => (
         <a href="mailto:tennisskolan@hindastennisklubb.net">tennisskolan@hindastennisklubb.net</a>.
       </p>
       <div className="contact-form" style={{margin: '2rem 0'}}>
-          <form method="post" action="#">
+          <form 
+            method="post" 
+            action="#"
+            netlify
+          >
             <label>
             <p>Name</p>
                 <input type="text" name="name" id="name" />

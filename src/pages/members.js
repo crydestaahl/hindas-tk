@@ -15,10 +15,25 @@ const MembersPage = () => {
       För medlemsfrågor maila: <a href="mailto:medlem@hindasttennisklubb.net">medlem@hindastennisklubb.net</a></p>
     
     <div className="contact-form" >
-        <form method="post" action="#">
+        <form 
+          method="post" 
+          action="/thanks-members"
+          netlify
+        >
             <label>
             <p>För- och efternamn</p>
                 <input type="text" name="name" id="name" />
+            </label>
+            <label>
+            <p>Medlemstyp</p>
+              <div className="radio">
+                <p>Vuxen</p>
+                <input type="radio" value="vuxen" name="medlemstyp" id="vuxen" />
+                <p>Junior </p>
+                <input type="radio" value="junior" name="medlemstyp" id="junior" /> 
+                <p>Familj </p>           
+                <input type="radio" value="familj" name="medlemstyp" id="familj" />
+              </div>  
             </label>
             <label>
             <p>Email</p>
@@ -33,7 +48,7 @@ const MembersPage = () => {
             <textarea name="message" id="message" rows="5" />
             </label>
             <div className="form-btns">
-                <button type="submit" class="button is-success">Send</button>
+                <button type="submit" class="button is-success" style={{margin: '1rem 0px;'}}>Send</button>
                 <input type="reset" value="Clear" class="button is-danger" />
             </div>
         </form>

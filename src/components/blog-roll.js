@@ -37,19 +37,19 @@ const BlogRoll = () => {
   const posts  = data.allMarkdownRemark.edges 
 
   return (
-    <div>
-      {posts.map(post => (
-              
-              <div className="card" key={post.id}>
-                <div className="card-image">          
-                  <Link to={post.node.fields.slug}>                                           
-                    <GatsbyImage 
-                      image={ post.node.frontmatter.image.childImageSharp.gatsbyImageData }
-                      alt={post.node.frontmatter.title}
-                      />
-                  </Link>                
+    <div className="blog-wrapper">
+    
+      {posts.map(post => (          
+          <div className="card" key={post.id}>
+              <div className="card-image">          
+                <Link to={post.node.fields.slug}>                                           
+                  <GatsbyImage 
+                    image={ post.node.frontmatter.image.childImageSharp.gatsbyImageData }
+                    alt={post.node.frontmatter.title}
+                    />
+                </Link>                
               </div>
-            <div className="card-content">
+          <div className="card-content">
               <div className="media">
                 <div className="media-content">
                   <Link to={post.node.fields.slug}>
@@ -58,16 +58,17 @@ const BlogRoll = () => {
                   <p><time dateTime="2021-04-26">{post.node.frontmatter.date}</time></p>
                 </div>
               </div>
-              <div className="content">
-                {post.node.frontmatter.description}
-                <br/>
-                <Link to={post.node.fields.slug}>
-                  <p>Läs mer...</p>
-                </Link>                
-              </div>
-              </div>
-            </div>
-          ))}
+          <div className="content">
+            {post.node.frontmatter.description}
+            <br/>
+            <Link to={post.node.fields.slug}>
+              <p>Läs mer...</p>
+            </Link>                
+          </div>
+          </div>
+          </div>
+      ))}
+
     </div>
   )
 }
