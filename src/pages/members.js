@@ -17,7 +17,7 @@ const MembersPage = () => {
     <div className="contact-form" >
         <form 
           name="Medlemsskapsanmälan"
-          method="post" 
+          method="POST" 
           action="/thanks-members"
           data-netlify="true"
         >

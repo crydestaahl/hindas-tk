@@ -30,13 +30,13 @@ const SchoolPage = () => (
       <div className="contact-form" style={{margin: '2rem 0'}}>
           <form 
             name="Tennisskola"
-            method="post" 
-            action="#"
+            method="POST" 
+            action="/thanks-members"
             data-netlify="true"
           >
             <label>
-            <p>Name</p>
-                <input type="text" name="name" id="name" />
+            <p>Namn</p>
+                <input name="namn" type="text" name="name" id="name" />
             </label>
             <label>
             <p>Personnummer</p>
