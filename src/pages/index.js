@@ -26,6 +26,7 @@ const IndexPage = () => {
                 src="../images/hindashallen.jpeg"
                 className="about-index-img"
                 layout= "fullWidth"
+                height="300px"
                 quality={95}
                 formats={["AUTO", "WEBP", "AVIF"]}
                 alt="HTKHallen"

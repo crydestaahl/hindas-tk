@@ -316,7 +316,8 @@ form {
         justify-content: space-between;
         flex-wrap: wrap;  
         max-width: 1505px;      
-    }
+        margin: 0 auto;
+      }
 
     .hero {
         width: 100vw;
@@ -347,5 +348,31 @@ form {
             background: none;
         }
     }
+
+    .blog-wrapper {
+        display: grid; 
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        margin: 2rem; 
+    }
+
+    .about-index {
+        position: relative;
+
+        .about-h3 {
+            position: absolute !important;
+            top: 40% !important;
+            left: 37% !important;
+            font-size: 45px !important;
+        }
+        .about-index-img {
+            height: 433px;
+        }
+     
+        
+
+    }
+   
 
   }
