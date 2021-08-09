@@ -6,7 +6,9 @@ import React from "react"
 const BlogRoll = () => {
  const data = useStaticQuery(graphql`
     query queryMcQuery {
-  allMarkdownRemark(filter: {id: {ne: "48e1aeef-4f19-5c13-ac0b-fbf5035425c3"}}) {
+  allMarkdownRemark(filter: {id: {ne: "48e1aeef-4f19-5c13-ac0b-fbf5035425c3"}}
+  sort: {fields: id}
+  ) {
     edges {
       node {
         fields {
