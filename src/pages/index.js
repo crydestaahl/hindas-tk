@@ -40,6 +40,7 @@ const IndexPage = () => {
             <Link to="tennis-school"><p>Läs mer...</p></Link>
           </div>
           
+          
           </div>
         </div>            
     </Layout>
