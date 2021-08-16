@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    <div className="site-content">
+    <div className="site-content" style={{overflowX: 'hidden'}}>
       <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
           <main>{children}</main>
         <footer
