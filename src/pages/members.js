@@ -48,7 +48,7 @@ const MembersPage = () => {
               <textarea name="message" id="message" rows="5" />
               </label>
               <div className="form-btns">
-                  <button type="submit" class="button is-success" style={{margin: '1rem 0px;'}}>Send</button>
+                  <button type="submit" class="button is-success" style={{margin: '1rem 0'}}>Send</button>
                   <input type="reset" value="Clear" class="button is-danger" />
               </div>
           </form>

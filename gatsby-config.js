@@ -23,8 +23,8 @@ module.exports = {
          link:'/tennis-school'
       },
         {
-         name:'Nyheter',
-         link:'/blog-page'
+//         name:'Nyheter',
+//         link:'/blog-page'
       },
     ]
   },
