@@ -4,6 +4,8 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
+import Fade from 'react-reveal/Fade';
+
 const Header = ({ siteTitle, menuLinks }) => {
   const [isActive, setIsActive ] = useState(false);
 
@@ -13,14 +15,14 @@ const Header = ({ siteTitle, menuLinks }) => {
   }
 
   return(
+
     <header
       style={{        
         background: `white`,
         marginBottom: `1.45rem`,      
       }}      
-    >
-    
-    <div 
+    > 
+      <div 
           className="overlay"
           style={{ width: `${isActive ? '100vw': '0'}`}}
           >
@@ -56,9 +58,6 @@ const Header = ({ siteTitle, menuLinks }) => {
             </div>
           </ul>
         </div>
-
-
-
       <div
         style={{
           margin: `0 auto`,
@@ -90,6 +89,7 @@ const Header = ({ siteTitle, menuLinks }) => {
           </Link>
         </h1>
         */}
+      <Fade>
         <div 
           className="hamburger"
           style={{ marginLeft: 'auto'}}
@@ -99,6 +99,7 @@ const Header = ({ siteTitle, menuLinks }) => {
            <div className={ isActive ? 'bar2-active' : 'bar2'}></div> 
            <div className={ isActive ? 'bar3-active' : 'bar3'}></div> 
         </div>
+        </Fade>
       </div>
       <div>
         <nav>

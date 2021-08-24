@@ -1,7 +1,7 @@
-
 import { graphql, useStaticQuery, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import React from "react"
+import Fade from 'react-reveal/Fade';
 
 const BlogRoll = () => {
  const data = useStaticQuery(graphql`
@@ -43,7 +43,8 @@ const BlogRoll = () => {
   return (
     <div className="blog-wrapper">
     
-      {posts.map(post => (          
+      {posts.map(post => (   
+        <Fade bottom cascade>    
           <div className="card" key={post.id}>
               <div className="card-image">          
                 <Link to={post.node.fields.slug}>                                           
@@ -71,6 +72,7 @@ const BlogRoll = () => {
           </div>
           </div>
           </div>
+        </Fade>   
       ))}
 
     </div>

@@ -5,7 +5,7 @@ import logo from "../images/logo.png"
 
 const Hero = () => {
   return (
-    <div className="hero">    
+    <div className="hero" loading="lazy">    
         <SEO title="Hindås Tennisklubb" />        
         <img src={logo} alt="Logo"/>
         <div className="hero-text">
