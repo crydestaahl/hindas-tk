@@ -14,7 +14,7 @@ const Hero = () => {
 
             <div className="hero-btn">          
             <button className="button"><a href="https://www.matchi.se/facilities/hindastk?date=2021-04-13&sport=">Boka bana</a></button>
-            <button className="button"><a href="#">Medlemsskap</a></button>        
+            <button className="button"><a href="members">Medlemsskap</a></button>        
         </div>
 
         </div>
