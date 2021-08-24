@@ -21,6 +21,10 @@ a {
     font-family: $font;
 }
 
+p {
+    font-size: 1rem;
+}
+
 a {
     color: $title-color
 }
@@ -465,6 +469,7 @@ form {
 
         p {
             margin: 1rem 0;
+            font-size: 1.2rem;
         }
         .about-title {
             .about-h3 {
@@ -479,7 +484,12 @@ form {
 
         }
     }
-   
+    
+    .pages-wrapper {
+        p {
+            font-size: 1.2rem;
+        }
+    }
     .contact-form {
         align-items: center;
         margin: 2rem;

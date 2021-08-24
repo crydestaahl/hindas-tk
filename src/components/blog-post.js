@@ -15,7 +15,7 @@ export default function BlogPost({ data }) {
       <div className="blog-post-content">
         <h1 className="blog-post-h1">{post.frontmatter.title}</h1>
         <small>{post.frontmatter.date}</small>
-        <div className="blog-post-body"dangerouslySetInnerHTML={{ __html: post.html }} />  
+        <div className="blog-post-body"dangerouslySetInnerHTML={{ __html: post.html }} />
         <Link to="/">Tillbaka.</Link>
       </div>         
     </Layout>

@@ -22,7 +22,7 @@ const IndexPage = () => {
           <div className="blog-posts">    
             <BlogRoll />   
           </div>
-          <Fade bottom cascade>
+          <Fade cascade>
             <div className="about-index">
               <div className="about-title">
                 <StaticImage 

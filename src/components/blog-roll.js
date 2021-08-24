@@ -44,7 +44,7 @@ const BlogRoll = () => {
     <div className="blog-wrapper">
     
       {posts.map(post => (   
-        <Fade bottom cascade>    
+        <Fade cascade>    
           <div className="card" key={post.id}>
               <div className="card-image">          
                 <Link to={post.node.fields.slug}>                                           
